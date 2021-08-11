@@ -86,7 +86,7 @@ section.blogs h3 {
 
 section.blogs .firstpost {
     width: 100vw;
-    background: url("index/images/becomingfrontend2.png");    
+    background: url("images/becomingfrontend2.png");    
     height: 10vh;
     display: inline-flex;
     justify-content: flex-start;
