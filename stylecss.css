@@ -49,8 +49,7 @@ ul.firstul {
 ul.flex {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
-    margin: 0;
+    margin-top: 75px;
 }
 h1 { 
     color: white;
