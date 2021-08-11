@@ -1,0 +1,436 @@
+html,body {
+    padding: 0;
+    box-sizing: border-box;
+    margin:0;
+    overflow-y:auto;
+    cursor:grab;
+
+}
+/* CUSTOMIZED CURSOR */
+#cursor { 
+    height: 4rem;
+    width: 4rem;
+    background: var(--Sunkist);
+    position: absolute;
+    border-radius: 50%;
+    display: none;
+    transition: 0.2s ease-out;
+    z-index: 0;
+    cursor: grab;
+    }
+
+#cursor:hover { 
+    transform: scale(0.5);
+}
+/* CUSTOMIZED CURSOR */
+
+/* ===== GLOBAL ====== */
+:root {
+    --Font: 'Archivo Black', sans-serif;
+    --Sunkist: linear-gradient(to top, #F2994A 0%, #F2C94C 100%)
+}
+
+
+
+body{
+    background: black;
+}
+li {
+    list-style-type: none;
+}
+
+
+
+ul.firstul {
+    padding-top: 8.8rem;
+    margin: 0%;
+
+}
+ul.flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin: 0;
+}
+h1 { 
+    color: white;
+    padding: 0;
+    margin:0;
+    
+}
+h3 {
+    font-family: 'Heebo', sans-serif;
+
+}
+
+img#think {
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    margin-right: 15%;
+}
+
+#colorgrey {
+    color: #333;
+}
+
+
+/* ===== GLOBAL ====== */
+
+
+/* NAVIGATION */
+section.nav { 
+    height: 10vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+
+
+}
+
+nav a, .page-header {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+    
+}
+
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+
+    
+}
+
+/* NAVIGATION */
+
+
+
+main    .landing-page  {
+    display:flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+main .heading {
+    display: flex;
+    font-family: var(--Font);
+    font-size:84px;
+    margin-top: 10%;
+    margin-right: 7%;
+    padding: 0;
+    flex-direction: column;
+    z-index: 2;
+
+    
+}
+
+main .heading .inline-heading {
+    display: inline-flex;
+}
+
+/* HEADER STYLER   */
+#outline {   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: black;
+ 
+}
+
+span #line {
+    width:100%;
+    background: #333;
+    color: white;
+    display: block;
+    height: 3px;
+    margin-right: 20px;
+    
+    
+}
+ #line2 {
+  
+    background: #333;
+    display: block;
+    position: relative;
+    height: 3px;
+    width: 80rem;
+    padding: 0;
+    top: 0%;
+}
+        
+span #linedown {
+    border-left: 3px solid #333;
+    margin-left: 99.9%;
+    margin-bottom: 2%;
+    padding-bottom: 73rem;
+}
+
+li.left-list{
+    margin-left: 4%;
+    margin: 0;
+}
+
+
+/* ======== BUTTTON STYLES ======= */
+section .flex-buttons {
+    height: max-content;
+    width: max-content;
+    display: grid;
+    padding: 0 3rem;
+    display: absolute;
+    cursor: pointer;
+}
+button.info.About, button.info.Blog {
+    height: 50px;
+    width: 120px;;
+    border: 1px solid white;
+    margin-left:  1px;
+    position: relative;
+    background: black;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: margin-left .7s ease-in-out;
+
+
+
+}
+ button.info.About:hover, button.info.Blogfor for :focus{
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff, 0) ;
+
+}
+@keyframes pulse {
+    0% {box-shadow: 0 0 0 0 red;}
+}
+
+
+@keyframes in {
+    from {margin-left: 1px}
+    to {margin-left: 20px}
+}
+@keyframes out {
+    0% {margin-left: 20px}
+    100%{margin-left: 1px}
+}
+
+
+
+
+
+
+ span#arrow ,span#head {
+    position: relative;
+    background: white;
+    margin-left:2px;
+    margin-top:  10px;
+    height: 1px; 
+    width: 20px;
+    float: left;
+
+ }
+
+
+ span#arrow,span#head:hover {
+     margin-left: 4px;
+     transition: all .5 ease;
+ }
+
+/* ======== BUTTTON STYLES ======= */
+ p#heading  {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Heebo', sans-serif;
+    line-height: 10px;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+
+p#heading2 {
+    position: relative;
+    font-size: 16px;
+    margin-top: 15%;
+    left: 10px;
+    font-family: 'Heebo', sans-seriff;
+    line-height: 5px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+/* ====== PARAGRAPH HEADER +++++ */
+/* HEADER STYLER   */
+
+/* ====== SECTION 2 ======= */
+
+section.section2 {
+    height: 25vh;
+}
+
+
+section.word-section {
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 84px;
+    font-family: 'Heebo', sans-seriff;
+    color: white;
+    white-space: normal;
+    flex-direction: column;
+    opacity: 0;
+
+}
+
+
+/* ====== SECTION 2 ======= */
+
+
+/* ========= BLOG SECTION ======= */
+section.blogs {
+    height: 100vh;
+    display: flex;
+}
+
+section.blogs h3 {
+    color:white;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    
+}
+
+section.blogs .firstpost {
+    width: 100vw;
+    background: url("D:/Code/Personal BlogFinal/index/images/becomingfrontend2.png");    
+    height: 10vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+
+
+}
+
+/*====== BLOG SECTION ======= */
+
+
+/* =====INTRO SECTION ======= */ 
+
+.intro {
+    background: black;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100% ;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.intro .intro-text{
+    color: white;
+    font-size: 4rem;
+    margin-top:10%;
+    font-weight: bolder;
+    opacity: 1;
+
+
+}
+
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/* .slider {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+} */
+
+/* =====INTRO SECTION ======= */ 
+
+
+
+/* ======= MOBILE RESPONSIVENESS ========  */
+
+@media (max-width: 375px) {
+
+    img#think {
+        display: none;
+    }
+
+    main.landing-page {
+        display: grid; 
+    }
+
+    main .heading .inline-heading {
+        display: grid;
+        text-align: center;
+        
+    }
+
+    main .heading {
+        margin: 0%;
+    }
+
+    main h1 {
+        font-size: 3rem;
+    }
+
+    ul.firstul {
+        margin-top: 10%;
+        padding-left: 10px;
+
+    }
+
+    ul.flex {
+        margin-top: auto;
+    
+    }
+
+    li.left-list {
+        margin: 10px 0 ;
+        line-height: 20%;
+    }
+
+    section.word-section { 
+        font-size:  3rem;
+    }
+
+    div.scrollmagic-pin-spacer {
+        min-height: 0%;
+        height: 0%;
+    }
+
+
+
+    section.word-section { 
+        text-align: center;
+        font-size: 3rem;
+    }
+
+}
+
+/* ======= MOBILE RESPONSIVENESS ========  */

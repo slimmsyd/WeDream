@@ -1,0 +1,113 @@
+
+html,body {
+    padding: 0;
+    box-sizing: border-box;
+    margin:0;
+    overflow-y:auto;
+
+    background: black;
+    font-family: 'Heebo', sans-serif;
+
+
+}
+:root {
+    --Sunkist: linear-gradient(to top, #F2994A 0%, #F2C94C 100%)
+}
+
+/* GLOBAL */
+
+h1 { 
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#cursor { 
+    height: 4rem;
+    width: 4rem;
+    background: var(--Sunkist);
+    position: absolute;
+    border-radius: 50%;
+    display: none;
+    transition: 0.2s ease-out;
+    cursor: grab;
+}
+
+#cursor:hover {
+    transform: scale(0.5);
+}
+
+/* GLOBAL */
+
+section.nav { 
+    height: 10vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+
+
+}
+
+nav a, .page-header {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+    
+}
+
+
+section.title { 
+    height: 10vh;
+
+}
+
+section.blogs {
+    height: 100vh;
+    display: flex;
+}
+
+section.blogs h3 {
+    color:white;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    
+}
+
+section.blogs .firstpost {
+    width: 100vw;
+    background: url("D:/Code/Personal BlogFinal/index/images/becomingfrontend2.png");    
+    height: 10vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+@media (max-width: 375px) { 
+    h1 { 
+        font-size: 3rem;
+    }
+    
+    section.blogs h3 {
+        font-size: 22px;
+    }
+
+    section.blogs .firstpost {
+        margin: 3rem 0;
+        align-self:flex-start ;
+    }
+}
