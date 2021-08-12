@@ -224,4 +224,26 @@ nav a, .page-header {
     }
 }
 
+@media(max-width:414px) { 
+    ul {
+     display: flex;
+     flex-direction: column;
+     
+    }
+
+    ul li  {
+        padding: 10px 0;
+        
+    }
+
+    ul li a {
+        width: 60px;
+        height: 60px;
+    }
+
+    .para-style {
+        padding: 0 10px;
+    }
+}
+
 
