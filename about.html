@@ -4,51 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="styleSocials.css">
 
-    <link rel="stylesheet" href="styleAbout.css">
-    <link rel="stylesheet" href ="index/css/all.min.css">
-  
+    <link rel="stylesheet" href="css/all.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&family=Heebo&display=swap" rel="stylesheet">
-    <title>About WeDream</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Socials</title>
 </head>
 <body>
-    <section class = "nav">
-        <nav class = page-header>
-            <a href="index"> We Dream </a>
-        </nav>
-    </section>
-    <div class="container">
-        <div class="card_container">
-            <div class="card">
-                <div class="card-contents">
-                        <h3 class ="card-header"> About  </h3>
-                        <p >We Dream</p> 
-                </div>
-                <div class ="card-description">
-                    <h3 class ="card-header">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook" id ="face"></i></li></a>
-                            <li><a href="https://www.instagram.com/sydcodes/"><i class="fab fa-instagram"id ="insta"></i></li></a>
-                            <li> <a href = '#'><i class="fab fa-snapchat" id ="snap"></i></li></a>
-                            <li><a href="https://twitter.com/slimmsyd"><i class="fab fa-twitter" id ="twitter"></a></i></li>
-                    </ul>
-                </h3>
-                       
-                    <p class="para-style">Blog Oringally Created To Showcase My Personal Web-Development Skill Progress and Personal Ideas || Aswell As a Site To Bring Your Websites Ideas To life</p>
-                </div>
-                    
-                </div>
-            </div>
-        </div>
-    
-</body>
-<div id="cursor"></div>
-<!-- FONT AWESOME  -->
-<script src="https://kit.fontawesome.com/26cef678c9.js" crossorigin="anonymous"></script>
-<!-- FONT AWESOME  -->
+    <nav class ="nav"> 
+        <div class="menu" > <img src ="socialIcons/hamburgermen.png"></div>
+        <div class ="header">
+           <ul>
+               <li id ="blogs"><a href ="blogformat.html" id = "blogs">Blogs</a></li>
+               <li id ="about"><a href ="index.html" id ="about">About</a></li>
+               <li id = "socials"><a href  ="socials.html" id ="socials">Socials</a></li>
+           </ul>
+    </nav>
 
-<script src = "cursoreffect.js"></script>
+
+           <section class ="page">
+            <ul id ="network">
+                <li class ="net"><a href="#" class ="icons"><i class="fab fa-facebook" id ="face"></i></li></a>
+                <li class ="net"><a href="https://www.instagram.com/sydcodes/" class ="icons"><i class="fab fa-instagram"id ="insta"></i></li></a>
+                <li class ="net"> <a href = '#' class ="icons"><i class="fab fa-snapchat"  ></i></li></a>
+                <li class ="net"><a href="https://twitter.com/slimmsyd" class ="icons"><i class="fab fa-twitter" id ="twitter"></a></i></li>
+        </ul>
+</section>
+
+<script src ="app.js"></script>
+
+</body>
 </html>
