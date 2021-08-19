@@ -117,7 +117,7 @@ li#blogs:hover {
 
 
 li#socials:after  { 
-    content: url("socialIcons/facebook.png");
+    content: url("socialIcons\facebook.png");
     display: inline-block;
     position: absolute;
     right: 60%;
@@ -132,7 +132,7 @@ li#socials:hover:after {
 
 }
 li#about:after  { 
-    content: url("socialIcons/helloimg.png");
+    content: url("socialIcons\helloimg.png");
     display: inline-block;
     position: absolute;
     left: 30%;
