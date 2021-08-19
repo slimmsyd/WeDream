@@ -1,487 +1,486 @@
-html,body {
-    padding: 0;
-    box-sizing: border-box;
-    margin:0;
-    overflow-y:auto;
-    cursor:grab;
+
+@font-face {
+    font-family: 'widescreen_trialex_semibold';
+    src: url('widescreenex_trial_sbd-webfont.woff2') format('woff2'),
+         url('widescreenex_trial_sbd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
-/* CUSTOMIZED CURSOR */
-#cursor { 
-    height: 4rem;
-    width: 4rem;
-    background: var(--Sunkist);
-    position: absolute;
-    border-radius: 50%;
-    display: none;
-    transition: 0.2s ease-out;
-    z-index: 0;
-    cursor: grab;
-    }
 
-#cursor:hover { 
-    transform: scale(0.5);
-}
-/* CUSTOMIZED CURSOR */
-
-/* ===== GLOBAL ====== */
 :root {
-    --Font: 'Archivo Black', sans-serif;
-    --Sunkist: linear-gradient(to top, #F2994A 0%, #F2C94C 100%)
+    --lightblue: #90E0EF;
 }
 
 
+body {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    background: #FFF;
 
-body{
-    background: black;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    
 }
 li {
-    list-style-type: none;
-}
-
-
-
-ul.firstul {
-    padding-top: 8.8rem;
-    margin: 0%;
-
-}
-ul.flex {
-    display: flex;
-    flex-direction: column;
-    margin-top: 75px;
-}
-h1 { 
-    color: white;
-    padding: 0;
-    margin:0;
-    
-}
-h3 {
-    font-family: 'Heebo', sans-serif;
-
-}
-
-img#think {
+    text-decoration:  none;
+    list-style: none;
+    font-size: 26px;
+    color: #000;
+    padding: 0 2rem 0 2rem;
+    cursor: pointer;
+    transition: color 0.5s;
     position: relative;
-    overflow: hidden;
-    flex: 2;
-    margin-right: 20%;
+
 }
 
-#colorgrey {
-    color: #333;
+hr {
+    height: 1px;
+    width: 400px;
+    background: #000;
+}
+
+.menu {
+    display: none;
 }
 
 
-/* ===== GLOBAL ====== */
-
-
-/* NAVIGATION */
-section.nav { 
+.nav {
     height: 10vh;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: 'Heebo', sans-serif;
-
-
-}
-
-nav a, .page-header {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    z-index: 1;
-    
-}
-
-
-button a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Heebo', sans-serif;
-
-    
-}
-
-/* NAVIGATION */
-
-
-
-main    .landing-page  {
-    display:flex;
-    flex-direction: row;
-    height: 90vh;
-}
-
-main .heading {
-    display: flex;
-    font-family: var(--Font);
-    font-size:44px;
-    margin-top: 10%;
-    margin-right: 7%;
-    padding: 0;
-    flex-direction: column;
-    z-index: 2;
-
-    
-}
-
-main .heading .inline-heading {
-    display: inline-flex;
-}
-
-/* HEADER STYLER   */
-#outline {   -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    -webkit-text-fill-color: black;
- 
-}
-
-span #line {
-    width:100%;
-    background: #333;
-    color: white;
-    display: block;
-    height: 3px;
-    margin-right: 20px;
-    
-    
-}
- #line2 {
-  
-    background: #333;
-    display: block;
-    position: relative;
-    height: 3px;
-    width: 80rem;
-    padding: 0;
-    top: 0%;
-}
-        
-span #linedown {
-    border-left: 3px solid #333;
-    margin-left: 99.9%;
-    margin-bottom: 2%;
-    padding-bottom: 73rem;
-}
-
-li.left-list{
-    margin-left: 4%;
-    margin: 0;
-}
-
-
-/* ======== BUTTTON STYLES ======= */
-section .flex-buttons {
-    height: max-content;
-    width: max-content;
+    background: #fff;
     display: grid;
-    padding: 0 3rem;
-    display: absolute;
-    cursor: pointer;
-}
-button.info.About, button.info.Blog {
-    height: 50px;
-    width: 120px;;
-    border: 1px solid white;
-    margin-left:  1px;
-    position: relative;
-    background: black;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    transition: margin-left .7s ease-in-out;
-
-
-
-}
- button.info.About:hover, button.info.Blogfor for :focus{
-    animation: pulse 1s;
-    box-shadow: 0 0 0 2em rgba(#fff, 0) ;
-
-}
-@keyframes pulse {
-    0% {box-shadow: 0 0 0 0 red;}
-}
-
-
-@keyframes in {
-    from {margin-left: 1px}
-    to {margin-left: 20px}
-}
-@keyframes out {
-    0% {margin-left: 20px}
-    100%{margin-left: 1px}
+    align-items:end;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
-
-
- span#arrow ,span#head {
-    position: relative;
-    background: white;
-    margin-left:2px;
-    margin-top:  10px;
-    height: 1px; 
-    width: 20px;
-    float: left;
-
- }
-
-
- span#arrow,span#head:hover {
-     margin-left: 4px;
-     transition: all .5 ease;
- }
-
-/* ======== BUTTTON STYLES ======= */
- p#heading  {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Heebo', sans-serif;
-    line-height: 10px;
-    font-weight: bold;
-    word-spacing: 3px;
-}
-
-p#heading2 {
-    position: relative;
-    font-size: 16px;
-    margin-top: 15%;
-    left: 10px;
-    font-family: 'Heebo', sans-seriff;
-    line-height: 5px;
-    font-weight: bold;
-    color: #333;
-
-}
-
-/* ====== PARAGRAPH HEADER +++++ */
-/* HEADER STYLER   */
-
-/* ====== SECTION 2 ======= */
-
-section.section2 {
-    height: 25vh;
+li:hover {
+    color: #e63946;
+    opacity: 1;
 }
 
 
-section.word-section {
-    background: black;
+a#socials {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s ;
+}
+
+a#socials:hover {
+    color: #e63946;
+
+}
+
+a#blogs {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s ;
+    
+}
+a#blogs:hover {
+    color: #e63946;
+}
+
+li#socials {
+    transition: transform 1s;
+
+}
+li#about { 
+    transition: transform 1s; 
+}
+
+li#blogs {
+    transition: transform 1s; 
+}
+
+li#socials:hover {
+    transform: translateX(-20px);
+}
+li#about:hover {
+    transform: translateY(-20px);
+}
+li#blogs:hover {
+    transform: translateX(20px);
+}
+
+
+
+
+
+li#socials:after  { 
+    content: url("socialIcons/facebook.png");
+    display: inline-block;
+    position: absolute;
+    right: 60%;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+li#socials:hover:after {
+    opacity:  1;
+    right: 5px;
+    transition: all 0.5s;
+
+}
+li#about:after  { 
+    content: url("socialIcons/helloimg.png");
+    display: inline-block;
+    position: absolute;
+    left: 25%;
+    
+    transition: all 0.5s;
+    opacity: 0;
+    top: 25%;
+    
+}
+li#about:hover:after {
+    opacity:  1;
+    transition: all 0.5s;
+    
+
+}
+
+.header:after  {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 40rem;
+    border-bottom: 2px solid #000;
+    margin-top: 10px;
+
+}
+
+
+
+section.title {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0.75in 1fr 0.75in   1fr ;
+    justify-items: center;
+    font-family: 'Inter', sans-serif;
+    
+    align-items: start;
+}
+
+
+/* ==== HOME TITLE ===== */
+h1 {
+    font-size: 74px;
+    grid-column: 2/3;
+
+} 
+
+.head {
+    padding-bottom: 20px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+.homeTitle  {
+    margin: 0;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 84px;
-    font-family: 'Heebo', sans-seriff;
-    color: white;
-    white-space: normal;
     flex-direction: column;
-    opacity: 0;
-
+    grid-column: 3/3;
 }
 
-
-/* ====== SECTION 2 ======= */
-
-
-/* ========= BLOG SECTION ======= */
-section.blogs {
-    height: 100vh;
-    display: flex;
+.homeTitle > .quote {
+    text-align: right;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
 
-section.blogs h3 {
-    color:white;
-    font-size: 4rem;
+/* ==== HOME TITLE ===== */
+
+
+.content .bio {
     padding: 0;
-    margin: 0;
-    
+    text-align: right;
+  
 }
 
-section.blogs .firstpost {
-    width: 100vw;
-    background: url("D:/Code/Personal BlogFinal/index/images/becomingfrontend2.png");    
-    height: 10vh;
-    display: inline-flex;
-    justify-content: flex-start;
-    align-content: center;
+.callToAction {
+    font-size: 28px;
+    padding-bottom: 30px;;
+}
+
+.bio {
+    font-size: 18px;
+}
+
+/* ==== IMAGE REDFIST ====== */
+.redFist { 
     position: relative;
-
-
-}
-
-/*====== BLOG SECTION ======= */
-
-
-/* =====INTRO SECTION ======= */ 
-
-.intro {
-    background: black;
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100% ;
-    height:100%;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    z-index: 2;
-    
-}
-
-.intro .intro-text{
-    color: white;
-    font-size: 4rem;
-    margin-top:10%;
-    font-weight: bolder;
-    opacity: 1;
-
-
-}
-
-
-.hide {
-    background: black;
     overflow: hidden;
-}
-
-.hide span {
-    transform: translateY(100%);
-    display: inline-block;
+     grid-column: 2/3;
+     margin-left: 20%;
 }
 
 
-/* =====INTRO SECTION ======= */ 
+.blueFist {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 5%;
+
+}
+/* ==== IMAGE REDFIST ====== */
+
+/* ==== BUTTON ===== */
+.btn { 
+    padding: 1em 3em;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin: 0 0.3em 0.3em 0;
+    background: #fff;
+    border: 2px solid #000;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 1s;
+} 
+.btn a {
+    transition: color 1s;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+}
+.btn a:hover {
+    color:#e63946;
+
+}
+
+
+button > a {
+    text-decoration: none;
+    color: #000;
+}
 
 
 
-/* ======= MOBILE RESPONSIVENESS ========  */
 
-@media (max-width: 414px) {
-    #cursor {
-        display:none;
+/* ==== BUTTON ===== */
+
+
+
+.movingBall {
+    position: absolute;
+    margin-left: 31%;
+    margin-top: 6%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 20px 20px, #5cabff, #000);
+    z-index: 1;
+    transition: all 0.5s;
+    animation: swing 2s ;
+    animation-fill-mode: forwards;
+}
+
+.movingBall .shadow { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0,0,0,0.4), rgba(0,0,0,0.1) 40%, rgba(0,0,0,0) 50%);
+    transform: rotateX(90deg) translateZ(-20px)
+    ;
+}
+
+ 
+
+
+@keyframes swing {
+    0% { 
+        margin-left: 31%;
+        margin-top: 5%
     }
 
-    img#think {
+    100% {
+        margin-left: 0%;
+        margin-bottom: 30%;
+    }
+}
+
+
+/* ==== MEDIA QUERIES ===== */
+@media only screen and  (max-width: 1720px) {
+ .homeTitle >  .bio {
+        font-size: 18px;
+        padding-right: 10px;
+        word-wrap:break-word;
+        text-align: center;
+    }
+  
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 46px;
+    }
+
+    .homeTitle > .quote {
+        font-size: 16px;
+        padding: 0 1.3rem 0 1.3rem;
+    }
+    
+    .homeTitle > .bio {
+        font-size: 16px;
+        width: 75%;
+        z-index: 1;
+    }
+    .callToAction {
+        z-index: 1;   
+    }
+    hr {
+        z-index: 1;
+    }
+
+    #help {
+        font-size: 18px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .blueFist {
+        margin-left: 30%;
+        margin-top: 75%;
+        z-index: 0;
+        height: 700px;
+        width: 500px;
+    }
+    .redFist {
+        margin-left: 5%;
+        margin-top: 105%;
+        z-index: 0;
+        height: 700px;
+        width: 500px;
+        position: absolute;
+    }
+
+
+    .nav .header {
+        display: none;
+       
+    }
+
+    .header:after {
         display: none;
     }
-
-    main.landing-page {
-        display: grid; 
+    .nav {
+        width: 150%;
+        justify-content: center;
+        align-items: center;
     }
-
-    main .heading .inline-heading {
-        display: grid;
-        text-align: center;
-        
-    }
-
-    main .heading {
-        margin: 0%;
-    }
-
-    main h1 {
-        font-size: 3rem;
-    }
-
-    ul.firstul {
-        margin-top: 10%;
-        padding-left: 3px;
-
-    }
-
-    ul.flex {
-        margin-top: auto;
-    
-    }
-
-    li.left-list {
-        margin: 10px 0 ;
-        line-height: 20%;
-    }
-
-    section.word-section { 
-        font-size:  2rem;
-    }
-
-    div.scrollmagic-pin-spacer {
-        min-height: 0%;
-        height: 0%;
-    }
-
-
-
-    section.word-section { 
-        text-align: center;
-        font-size: 3rem;
-    }
-
-}
-
-@media (max-width: 1024px) { 
-    
-    #cursor {
-        display: none;
-    }
-
-    
-    main.landing-page {
-        display: grid; 
-    }
-
-    main .heading .inline-heading {
-        display: grid;
-        text-align: center;
-        
-    }
-    img#think { 
+    .menu {
         position: relative;
-        margin: 0;
-        overflow: auto;
-        margin-bottom: 100px; 
+        display:block;
+        align-self: center;
+        justify-self: center;
     }
-    section.word-section {
-        text-align: center;
-    }
-}
 
-@media (max-width: 540px) { 
-    
-    #cursor {
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    li {
+        padding: 5px 0 5px 0;
+    }
+    li#about::after {
         display: none;
     }
 
-    
-    main.landing-page {
-        display: grid; 
+    li#about:hover {
+        transform: translateX(-20px);
     }
 
-    main .heading .inline-heading {
-        display: grid;
-        text-align: center;
-        
-    }
-    img#think {
-        display: none;
-    }
-
-    section.word-section {
-        text-align: center;
-        font-size: 44px;
-    }
 }
 
-@media (max-width:375px) {
- ul.firstul {
-     margin-top: 10%;
+@media only screen and (max-width: 414px) {
+    h1 {
+        font-size: 46px;
+    }
+
+    .homeTitle > .quote {
+        font-size: 16px;
+        padding: 0 1.3rem 0 1.3rem;
+    }
+    
+    .homeTitle > .bio {
+        font-size: 16px;
+        width: 75%;
+        z-index: 1;
+    }
+    .callToAction {
+        z-index: 1;   
+    }
+    hr {
+        z-index: 1;
+    }
+
+    #help {
+        font-size: 18px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .blueFist {
+        margin-left: 30%;
+        margin-top: 75%;
+        z-index: 0;
+        height: 700px;
+        width: 500px;
+    }
+    .redFist {
+        margin-left: 5%;
+        margin-top: 105%;
+        z-index: 0;
+        height: 700px;
+        width: 500px;
+        position: absolute;
+    }
+    .nav .header {
+        display: none;
+       
+    }
+
+    .header:after {
+        display: none;
+    }
+    .nav {
+        width: 150%;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu {
+        position: relative;
+        display:block;
+        align-self: center;
+        justify-self: center;
+    }
+
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
 }
 /* ======= MOBILE RESPONSIVENESS ========  */
 
