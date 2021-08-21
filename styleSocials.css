@@ -123,6 +123,7 @@ li#socials:after  {
     display: inline-block;
     position: absolute;
     right: 60%;
+    top: 10%;
     transition: all 0.5s;
     opacity: 0;
 }
