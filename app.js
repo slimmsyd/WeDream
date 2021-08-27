@@ -12,7 +12,7 @@ let favoriteQuotes = {
 
 }
 
-var randomImage = new Array("url(photos/bluepaint.jpg)","url(photos/createact.jpg)", "url(photos/forest.jpg)", "url(photos/opportunity.jpg)", "url(photos/womenandmirror.jpg)" )
+var randomImage = new Array("url(photos\bluepaint.jpg)","url(photos\createact.jpg)", "url(photos\forest.jpg)", "url(photos\opportunity.jpg)", "url(photos\womenandmirror.jpg)" )
 
 let array_of_specified_colors = ["#ef476f", "#"]
 
