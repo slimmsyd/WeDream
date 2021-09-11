@@ -325,6 +325,11 @@ li#about:hover:after {
         padding: 5rem 0 0 0
     }
 }
+    @media only screen and (max-height: 256px) {
+    .current-blog {
+        padding: 15rem  0 0 !important;
+        
+    }
 
 }
 
