@@ -1,17 +1,9 @@
 
-@font-face {
-    font-family: 'widescreen_trialex_semibold';
-    src: url('widescreenex_trial_sbd-webfont.woff2') format('woff2'),
-         url('widescreenex_trial_sbd-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 :root {
     --lightblue: #90E0EF;
-}
+   --newfont: 'abril-display', serif;
 
+}
 
 body {
     padding: 0;
@@ -60,6 +52,7 @@ hr {
     background: #fff;
     justify-content: center;
     align-items: center;
+    font-family: var(--newfont)
 }
 
 .nav .dot {
@@ -176,8 +169,7 @@ section.title {
     display: grid;
     grid-template-columns: 1fr 0.75in 1fr 0.75in   1fr ;
     justify-items: center;
-    font-family: 'Inter', sans-serif;
-    
+    font-family: var(--newfont);
     align-items: start;
 }
 
@@ -193,6 +185,24 @@ h1 {
     padding-bottom: 20px;
     margin: 0;
     letter-spacing: 4px;
+    text-align: center;
+}
+
+input#name { 
+text-align: center;
+border-top:  #FFF;
+border-right:  #fff;
+border-left: #fff;
+font-size: 19px;
+z-index: 3;
+font-family: var(--newfont);
+}
+
+
+@media only screen and (max-width: 1912px) {
+    .head {
+        text-align: left;
+    }
 }
 .homeTitle  {
     margin: 0;
@@ -244,9 +254,10 @@ h1 {
 
 
 .blueFist {
-    position: absolute;
+    position: relative;
     margin-left: 50%;
     margin-top: 5%;
+    z-index: 0;
 
 }
 /* ==== IMAGE REDFIST ====== */
@@ -313,20 +324,7 @@ button > a {
     ;
 }
 
-/* @keyframes swing { 
-    0% { 
-        margin-left: 31%;
-        margin-top: 6%
-    }
-    
-    50% {
-        margin-left: 0%;
-        margin-bottom: 35%;
-    }
 
-
-}
- */
 
 
 @keyframes swing {
@@ -509,10 +507,85 @@ button > a {
         justify-content: center;
 
 }
+
+}
+
+.homeTitle > .quote { 
+    text-align: left;
+
+}
+
+@media only screen and (max-width: 782px) {
+    .quote#q { 
+        text-align: left ;
+        padding: 0 100px 0 3px !important;
+    
+}
+
+.redFist {
+    margin-left: 210%;
+}
+
+.header:after {
+    margin-left: 6%;
+}
+
+
+@media only screen and (max-width: 425px) { 
+    .redFist {
+        margin-top: 750%;
+        margin-left: 750%;
+    }
+        section#current {
+        overflow:  visible!important;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+    .redFist {
+        margin-top: 150%;
+        margin-left: -50%;
+        margin-right: 5%;
+    }
+
+    .blueFist { 
+        margin-top: 600%;
+
+    }
+    .head  {
+        padding: 0 0 0 40px;
+        text-align: center;
+    }
+    p#name {
+        text-align: center;
+    }
+
+    .quote#q{
+
+        padding: 0 0 0 0 !important;
+        text-align: center;
+    }
+
+    body {
+        width: 400px
+    }
+
+
+  
+
+}
+
 /* ==== MEDIA QUERIES ===== */
 
 
 }
+
+
+
+
 
 
 
