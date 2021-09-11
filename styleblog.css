@@ -320,6 +320,11 @@ li#about:hover:after {
         transform: translateX(30px);
     }
 }
+    @media only screen and (max-height: 898px) {
+    .current-blog {
+        padding: 5rem 0 0 0
+    }
+}
 
 }
 
