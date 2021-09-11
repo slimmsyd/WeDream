@@ -1,40 +1,128 @@
-* {
+body{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Hina Mincho', serif;
+    font-family: 'Heebo', sans-serif;
+    background: #fff;
+
 }
-
-
-body {
-    height: 100vh;
-    display: grid;
-    flex-direction: row;
+:root {
+    --mainfont:'Roboto', sans-serif;
    
-    flex-direction: column;
-    row-gap: 0;
-    grid-template-rows: auto ;
-
-    background: url("photos/forest.jpg")
-}
+   --newfont: 'abril-display', serif;
+   }
+   
 
 h1 {
-    display: flex;
-    flex-direction: column;
-    padding: 2.3rem;
-    color: #fff;
-     justify-self: center;
-    align-self: flex-end;
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 21px;
+    text-align: left;
+}
+
+
+nav {
+    height: 10vh;
+    font-size: 34px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr  ;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family:  var(--newfont);
+    border-bottom: 1px solid #e3e8ed;
+}
+
+nav .title { 
+    grid-column: 2/3;
     text-align: center;
+}
+
+nav .abt {
+    grid-column: 3/ 3;
+    font-size: 21px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 7.5in [end] 0.5in 1fr;
+    height: 100vh;
 
 }
 
-button {
-    cursor: pointer ;
-    height: 25px;
-    width: 250px;
-    justify-self: center  !important;
-    align-items: flex-start !important;
-    
+article *  {
+    grid-column:  start / end ;
+    text-align: center;
+}
 
+@media (max-width: 8.5in)  {
+    article { grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;;}
+     .title {font-size: 21px;}
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+ .together {
+
+font-size: 16px; 
+padding: 0;
+font-weight: 0s;
+border-left: 1px solid #e3e8ed;
+
+}
+
+
+.wrapper { 
+    margin: 0;
+    max-width: 100%;
+    border-right: 1px solid #e3e8ed;
+    
+   
+}
+.wrapper, .topic {
+    font-size: 21px;
+    line-height: 200%;
+    text-align: left;
+    padding: 0 1.2rem 0 0;
+}
+
+.content  {
+    font-size: 17px ;
+    text-align: left;
+}
+.contenthead  {
+    font-size: 21px ;
+    text-align: left;
+}
+
+img {
+     border: 3px solid #000;    
+    margin-top: 10%;
+}
+
+
+
+
+.break {
+    padding: 2.5rem 0;
+}
+
+
+footer .footer {
+    grid-column:  1 / 4;
 }
