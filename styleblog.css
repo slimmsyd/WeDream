@@ -167,6 +167,7 @@ li#about:hover:after {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 5rem 0rem 0rem 10rem;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
    
