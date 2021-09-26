@@ -434,5 +434,30 @@ section.secondEntry {
     border: 1px solid #000;
 }
 
+@media only screen and (max-width:768px ) { 
+    .secondBioTile { 
+        flex: 1;
+    }
+    .secondEntry {
+        flex-direction: column !important;
+        align-items: center;
+}
+#secondBioTitle { 
+    transform: translate(0px, 0px);
+    position: relative !important;
+    
+}
+}
 
+@media only screen and (max-width: 425px) { 
+ .secondEntry {
+     margin-left: 120px
+ }   
+}
+@media only screen and (max-width: 325px) { 
+    .secondEntry { 
+        margin-left: 150px;
+    }
+
+}
 /* BLOG THREE  */
