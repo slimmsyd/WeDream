@@ -452,7 +452,11 @@ section.secondEntry {
 @media only screen and (max-width: 425px) { 
  .secondEntry {
      margin-left: 120px
- }   
+ }  
+  .secondEntry h1 {
+      text-align: right !important;
+      width: 400px !important;
+  
 }
 @media only screen and (max-width: 325px) { 
     .secondEntry { 
