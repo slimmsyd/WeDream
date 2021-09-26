@@ -1,4 +1,13 @@
 
+@font-face {
+    font-family: 'widescreen_trialex_semibold';
+    src: url('widescreenex_trial_sbd-webfont.woff2') format('woff2'),
+         url('widescreenex_trial_sbd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 :root {
     --lightblue: #90E0EF;
    --newfont: 'abril-display', serif;
@@ -586,9 +595,4 @@ button > a {
 
 
 
-
-
-
-
-
-
+/* ===== SOCIALS PAGE ====== */
