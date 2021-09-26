@@ -169,7 +169,6 @@ li#about:hover:after {
     align-items: center;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-   
 
 }
 
@@ -190,7 +189,6 @@ li#about:hover:after {
     border-top: 1px solid #000;
     transform: translateY(-50px);
     font-family: abril-display, serif;
-
     z-index: 1;
     text-align: center;
     justify-content: center;
@@ -200,12 +198,20 @@ li#about:hover:after {
 
 .current-post h3 {
     color: #000;
+    font-weight: 100;
+    font-family: abril-display, serif;
+
 }
  
 .img {
     flex: 7;
     align-self: center;
     position: absolute;
+}
+
+.img1_header {
+    box-shadow: 0px 5px 30px #000;
+
 }
 
 .head  {
@@ -285,13 +291,12 @@ li#about:hover:after {
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 425px) { 
-    .current-blog { 
-    padding: 5rem 0rem 0rem 10rem;
-    }
-    
 .current-post {
    margin: 0  0 0 2rem;
     position: absolute;
+}
+.current-blog { 
+    padding: 5rem 0rem 0rem 10rem;
 }
 
  .static-text { 
@@ -347,3 +352,87 @@ li#about:hover:after {
 
 
 /* CURRENT BLOG */ 
+
+
+
+/* BLOG THREE  */
+
+section.secondEntry { 
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+
+.secondEntry h1  {
+    font-family: var(--newfont);
+    font-size: 74px;
+    font-weight: 700;
+    text-align: left;
+  
+
+
+}
+.secondH1Title { 
+    text-align: left;
+    padding-right: 60px;
+}
+#secondBioTitle {
+ position: absolute; 
+ transform: translate(300px, 130px);
+ font-family: var(--newfont);
+ font-size: 26px;
+}
+
+.img2 { 
+    height: 700px;
+    width: 400px;
+    border: 1px solid #000;
+    box-shadow: 0px 5px 30px #000;
+    padding-right: 50px;
+}
+
+.img2_header {
+    font-family: abril-display, serif;
+    margin-top: 5%;
+    text-align: center;
+    position: relative;
+    height: 50px;
+    width: 450px;
+    background-color: #fff;
+    position: absolute;
+    border-top: none;
+    transform: translate(-476px, -150px);
+}
+@media only screen and (max-height: 1065px) { 
+  .img2 {
+      margin-top: 10%;
+  }
+  .img2_header { 
+      margin-top: 15%;
+  }
+}
+.img2_caption { 
+    height:50px;
+    background-color: #fff;
+    padding-top: 20px;
+    transform: translateY(-10px);
+}
+.pixalated { 
+    height: 650px;
+    width: 450px;
+    z-index: -1;
+}
+
+.btn { 
+    cursor: pointer;
+    background: #fff;
+    font-size: 16px;
+    padding: 1em 3em;
+    transform: translate(150px, -42px);
+    border: 1px solid #000;
+}
+
+
+/* BLOG THREE  */
