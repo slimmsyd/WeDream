@@ -169,6 +169,7 @@ li#about:hover:after {
     align-items: center;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
+    padding-bottom: 40px;
 
 }
 
