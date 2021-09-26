@@ -51,6 +51,7 @@ hr {
     justify-content: center;
     align-items: center;
     font-family: var(--newfont);
+
     
 }
 
@@ -329,6 +330,9 @@ li#about:hover:after {
     .static-text {
         transform: translateX(30px);
     }
+    .nav {
+        padding-bottom: 20px;
+    }
 }
 
 @media only screen and (max-height: 898px) {
@@ -341,6 +345,9 @@ li#about:hover:after {
     .current-blog {
         padding: 15rem  0 0 !important;
         
+    }
+      .nav {
+        padding-bottom: 20px;
     }
  
 }
