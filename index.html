@@ -4,53 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="stylecss.css">
 
-    <!-- FONT -->
-    <link rel="stylesheet" href="https://use.typekit.net/hsk3jhn.css">
-    <!-- FONT -->
+    
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-
-
-  
-    <title> Home </title>
+    <link rel="stylesheet" href ="redesigncss.css">
+    <title>We Dream</title>
 </head>
-<body>
-    <nav class ="nav"> 
-        <div class="menu" > <img src ="socialIcons/hamburgermen.png"></div>
-        <div class ="header">
-           <ul>
-               <li id ="blogs"><a href ="blog.html" id ="blogs">Blogs</a></li>
-               <li id ="about">About</li>
-               <li id = "socials"><a href  ="https://sydneysanders.dev/" id ="socials">Socials</a></li>
-           </ul>
-    </div>
+<body>  
+    <section class = "main-body">
+    <nav class ="nav">
+        <div class ="nav_formatter">
+            <!-- <a href = "#" class ="navigator" id ="podcast"> Podcast</a>
+            <a href ="#" class="navigator"> Blogs </a> -->
+        </div>
     </nav>
-  <section class ="title">
-      
-      <img class ="redFist" src ="WeDreamLogo/Red First.png">
-      <div class ="homeTitle">
-          <h1 class ="head" >We Dream To Be . . .<input type ="text" id ="name"></h1>
-         
-          <p class ="quote" id ="q">Decentralized Community Of Ideas</p>
-          <p class ='bio'> Where The Community Can Be Human Again 
-            <p class ="bio2"> Here is a community where Ideas can be Discussed and Collectively shared.</p>
-            
-          <p id ="help" >Helping Bring Your Ideas  To Life </p>
-          <hr>
-          <p class ="callToAction">We Dream Together </p>
-          
-          <button class ="btn"><a href="#">Explore</a> </button>
-          <!-- <figure class="movingBall"><span class ="shawdow"></span></figure> -->
+    <div class ="landing_page_log_mobileOnly">
+         <img src ="WeDreamLogo/WeDreamWorldCropped.png">
+    </div>
+    <div class ="header">
+        <div class ="empty"></div>
+        <header class ="head">
+        <h1 id ="first_line">
+            Whatever You Do,
+        </h1>
+        <h1 id ="second_line">Don't Stop Dreaming. </h1>
+        <p>Here at We Dream we promote the transfer and collaboration of innovated, inspiring, and wild ideas. </p>
+        
+    </header>
 
-      </div>  
-      <img class="blueFist" src ="WeDreamLogo\BlueFist.png">
+    <div class="button-Section">
+        <img class ="img" src = "WeDreamLogo/SunBoy.png">
+    <button class ="btn button">Get Inspired </button>
+    </div>
+
+        <footer class ="footerDetails">
+            <div class="line-box">
+                <nav  class = "nav_Links nav_Social">
+                    <a style="color: #1E96FC;" href = "mailto:ssanders444@gmail.com">Share Your Idea</a>
+                   </nav>
+                   <span id ="divider_line"></span>
+                <nav class = "nav_Links nav_Social">
+                  Socials
+                   </nav>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <div class ="last_bar">
+        <h2><span id ="changing-text-1"></span></h2>
+        <h2><span id ="changing-text"></span></h2>
+        <h2 id ="innovation">INNOVATION</h2>
+    </div> 
+
+
+ 
+    </section>
+
+    <section  class ="content-section">
      
-  </section>
+     <div class="top-row1">
+         <div class = "nested-top">
+            <h1 id ="top-row-header1"> BLOG </h1>
+            <h1 id ="top-row-header2">POST</h1>
+            <p class ="nested_p">WeDream is a personal blog dedicated to the pursuit of my personal ambitions. Releasing tips and tricks regarding self-help & Web Developopment</p>
+         </div>
+         <img class ="WeDreamLogo" src ="WeDreamLogo/WeDreamWorldCropped.png">
+     
+     </div>
+     <div class="bottom-row1">
+        <div class ="article_header_contanier"> 
+            <h2 id ="bottom-row-header"> Latest Articles</h2>
+        </div>
 
 
-  
+        <div class="blog-outer-container">
+            <div class="blog-post-outline">
+              <img id="art_photos" src ="socialIcons/BlogLogo.jpeg.png" > 
+            <h3 style="text-align: center;">Leveraging Your Best Self </h3>
+                <p style="text-align: center;"><i class="fas fa-user"></i>Helpful insights about personal development in Web Development</p>
+                <a href = "#" class = "btn_post"><button class = "btn_features ">Read</button></a>
+            </div>
+     </div>
+    </section>
 
-<script src ="app.js"></script>
+
+
+
 </body>
+<div id="cursor-event"></div>
+<script src ="/Javascript Code/scrollleft.js"></script>
+<script src = "./Javascript Code/cursorEffect.js"> </script>
+
 </html>
