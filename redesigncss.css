@@ -1,0 +1,639 @@
+:root { 
+    --openSans: "Open Sans", sans-serif; 
+    --navFont: 24px;
+    --secondaryColor: #1E96FC;
+}
+
+
+
+::-webkit-scrollbar-thumb { 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #1E96FC;
+
+}
+
+
+body { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:scroll ;
+    overflow-y: scroll;
+    cursor: grab;
+    display: flex ;
+}
+
+.landing_page_log_mobileOnly {
+    display: none;
+}
+.landing-page { 
+    width: 100%;
+}
+.test {
+     width: 100vw;
+}
+
+h1,h2,h3 { 
+    font-family: var(--openSans);
+    color: hsl(0, 0%, 15%)
+
+}
+p {
+    font-family: var(--openSans);
+}
+a { 
+    text-decoration: none;
+    color: #000
+}
+
+i {
+    padding: 0 10px 0 0
+}
+.main-body { 
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+}
+.nav {
+    font-family: var( --openSans);
+    font-weight: 600;
+    height: 100vh;
+    border-right: 1px solid hsl(208, 97%, 45%);
+    width: 10rem;
+}
+
+
+.nav_formatter { 
+    height: 100%;
+    display: grid;
+    grid-template-rows:1.5fr 1.5fr 1.5fr;
+}
+.navigator  { 
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 200px; 
+    transform: rotate(-90deg);
+    position: relative;
+    font-size: var(--navFont);
+    color: var(--secondaryColor)
+}
+#podcast  {
+    grid-row: 2;
+
+}
+
+
+/* CENTER OF LANDING PAGE  */
+
+.empty { 
+    height: 100px;
+    flex: 1.5
+}
+.head {
+    flex:2.5;
+}
+.header   { 
+    display: flex;
+    flex-direction: column;
+    width:150%;
+
+}
+.header h1 { 
+    margin-left: 150px;
+    font-size: 88px;
+    font-weight: bolder;
+
+}
+.header p {
+    font-size: 18px;
+    margin-left: 150px;
+    width: 30%;
+    /* text-shadow: 0 0.5px; */
+}
+.btn {
+    font-family: var(--openSans);
+    background: var(--secondaryColor);
+    color: #fff;
+    border: none;
+    width: 170px;
+    height: 50px;
+    margin-left: 150px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.btn_features { 
+    font-family: var(--openSans);
+    background: hsl(208, 97%, 55%);
+    color: #fff;
+    border: none;
+    width: 170px;
+    height: 50px; cursor: pointer;
+}
+
+@media screen and (max-height: 1280px) { 
+    .head {
+        flex: 4;
+    }
+}
+@media screen and (max-width: 1940px) and (max-height: 1254px )  { 
+    .empty {
+        flex: 1;
+    }
+    .header h1 { 
+        font-size: 66px
+    }
+ 
+    .footerDetails { 
+        flex: 0 !important
+    }
+    .button-Section { 
+        flex: 2;
+    }
+
+}
+@media screen and (max-width: 1024px) { 
+    .img {
+        transform: translate(7em, -5.5em) !important;
+    }
+}
+/* .btn:hover {
+    background-color: #A2D6F9;
+} */
+
+button.btn::before {
+    background: #fff;
+    content: "";
+    display: inline;
+    left: 180px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: translateY(-16px);
+    transition: all 0.35s linear;
+}
+
+button.btn:hover.btn::before{
+    left: 200px
+}
+
+
+.img {
+    position: absolute;
+    z-index: -1;
+    transform: translate(12em, -5.5em);
+}
+
+
+#first_line, #second_line {
+    margin-top: 0;
+    color: hsl(0, 0%, 20%)
+} 
+#second_line::after{
+    content: url("WeDreamLogo/WeDreamWorldCropped.png");
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+}
+
+
+.wedreamCoin { 
+    position: relative;
+}
+
+.last_bar {
+    display: grid;
+    grid-template-rows:1.5fr 1.5fr 1.5fr;
+    width: 70vw;
+}
+.last_bar h2 { 
+    transform: rotate(-270deg);
+    align-self: flex-start;
+    margin-top: 80px;
+    justify-self: center;
+    font-weight: bold;
+    font-size: 54px;
+
+}
+
+span#changing-text::before { 
+    content: "";
+    animation: animate infinite 7s;
+   
+}
+@keyframes animate {
+    0% { content: "CREATE"}
+    50%{content: "PURSUE"}
+    75%{content: "ENSUES"}
+    100%{content: "CREATE"}
+}
+span#changing-text-1::before { 
+    content: "";
+    animation: animate-1 infinite 7s;
+}
+@keyframes animate-1 { 
+    0%{content: "DREAMS";}
+    50%{content: "IDEAS";}
+    75%{content: "ACTIONS";}
+    100%{content: "DREAMS";}
+}
+
+/* MEDIA QUERIES LAPTOP 1440 */
+@media screen and (max-width: 1444px) { 
+   .header {
+       flex: 10;
+   }
+   .header p {
+       width: initial;
+   }
+
+    .last_bar {
+        flex: 2; 
+    }
+
+}
+
+@media screen and (max-width: 768px) { 
+    .header { 
+        width: initial !important;
+    }
+}
+
+@media screen and (max-width: 1179px) { 
+    .header h1 {
+        font-size: 58px !important;
+        white-space: nowrap;
+    }
+    .header h1, .header p, .btn  { 
+        margin-left: 38px;
+    }
+
+    button.btn::before { 
+        left: 145px;
+    }
+button.btn:hover.btn::before{
+    left: 185px;
+
+
+}
+
+h2#innovation { 
+    margin-top: 150px;
+
+}
+}
+@media screen and (max-width: 1440px) { 
+    .header h1 { 
+        font-size: 66px;
+    }
+}
+/* MEDIA QUERIES LAPTOP 1440 */
+/* CENTER OF LANDING PAGE  */
+
+.footerDetails { 
+    flex: 2;
+    height: max-content;
+    display:  flex;
+    justify-items: flex-end;
+    align-items: flex-end;
+}
+
+.line-box {
+  width: max-content;
+  text-align: left;
+  display: flex;
+}
+#divider_line { 
+    width: 1px;
+    height: 65px;
+    transform: translateY(-20px);
+    background-color: #d9d9d9;
+    margin-left: 75px;
+}
+.nav_Links {
+    text-align: center;
+    color: var(--secondaryColor);
+    font-family: var(--openSans);
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 60px 60px;
+    cursor: pointer;
+}
+.nav_Links::after{
+    content: "";
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 20px;
+    border: solid var(--secondaryColor);
+    border-width: 0 1px 1px 0;
+    padding: 6px;
+    transform: rotate(-45deg);
+    position: absolute;
+    transition: all  250ms linear
+}
+.nav_Links:hover::after { 
+    transform: rotate(135deg);
+}
+
+
+
+
+#cursor-event { 
+    height: 50px;
+    width: 50px; 
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #1E96FC;
+    background: transparent;
+    z-index: -1;
+    transition-duration: 200ms ;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+
+}
+
+#cursor-event::after { 
+    content: "";
+    height: 50px;
+    width: 50px; 
+    border: 3px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    opacity: .5s;
+    top: -3px;
+    left: -3px;
+    animation: cursorAnim2 1s infinite alternate;
+    
+
+}
+
+@keyframes cursorAnim { 
+    from { 
+        transform: scale(1);
+    }
+    to { 
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2{ 
+    from { 
+        transform: scale(1);
+    }
+    to { 
+        transform: scale(.4);
+    }
+
+}
+
+
+/* BLOG POST SECTION  */
+
+.content-section {
+    height: 100vh;
+    width: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.content-section h1 { 
+    color: #000;
+    font-size: 88px;
+}
+.nested-top { 
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 650px;
+}
+
+
+.top-row1 { 
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    padding-bottom: 5rem;
+}
+@media screen and (max-height: 900px) { 
+    .top-row1 {
+        padding-bottom: 11rem;
+    }
+}
+#top-row-header1 { 
+    flex: 3;
+    padding-left:95px;
+    transform: translateY(70%);
+}
+#top-row-header2 { padding-left: 95px;
+    transform: translateY(-50%);
+
+} 
+
+
+.nested_p {
+    padding-left: 95px;
+    width: 500px;
+}
+.nested_p::before { 
+    content: " "; 
+    width: 3px;
+    height: 50px;
+    transform: translate(-10px, -8px);
+    position: absolute;
+    background-color: #1E96FC;
+}
+
+
+.WeDreamLogo { 
+    flex: 2;
+    object-fit:none;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    transform: rotate(13deg)
+}
+
+
+
+/* BOTTOM ROW  */
+
+.article_header_contanier { 
+    display: flex;
+    align-items: flex-end;
+    height: 10rem;
+    width: 10rem; 
+    padding-left: 95px; 
+}
+#bottom-row-header { 
+    margin-bottom: 3rem;
+}
+#bottom-row-header::before { 
+    content: " "; 
+    width: 3px;
+    height: 50px;
+    transform: translate(-10px, -8px);
+    position: absolute;
+    background-color: #1E96FC;
+}
+
+.blog-outer-container { 
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    justify-self: center;
+}
+
+.blog-post-outline { 
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    border-radius: 10%;
+    height: 34rem;
+    width: 20rem;
+    border-right: 1px solid #4D4D4D;
+    border-left: 1px solid #4D4D4D;
+    border-bottom: 1px solid #4D4D4D;
+    margin-left: 95px;
+    box-shadow: -5px 10px 15px 10px rgba(0,0,0, 0.1);
+
+}
+.blog-post-outline h3 {
+    font-weight: 600;
+}
+.blog-post-outline p { 
+  font-size: 14px;
+  padding: 0 12px 0 12px;
+
+}
+.blog-post-outline .btn_features {
+    align-self: center;
+    margin-top: 30px; 
+    transition: 250ms ease-out;
+}
+.blog-outer-container .btn_features:hover { 
+    background-color: hsl(208, 97%, 45%);
+}
+.blog-post-outline .btn_post { 
+    text-align: center;
+}
+
+#art_photos {
+    object-fit: contain;
+    border-radius: 10%    10%      0           0;
+    border-bottom: 1px solid #4D4D4D;
+
+
+}
+/* BOTTOM ROW  */
+/* BLOG POST SECTION  */
+
+@media screen and (max-width: 1024px)  {
+    button.btn::before { 
+        left: 110px;
+    }
+    .last_bar { 
+        visibility: hidden;
+    }
+    
+}
+/* MOBILE RESPONSIVENESS */
+@media  screen  and (max-width: 430px) and (max-height: 834px)
+{
+    body { 
+        flex-direction: column;
+    }
+    h1,h2 {
+        text-align: center;
+    }
+    p {
+        margin: 0;
+        text-align: center;
+    }
+    footer.footerDetails{display: none;}
+    .empty{display: none;}
+    .main-body {
+        flex-direction: column;
+        width: max-content;
+        height: 150vh;
+        align-items: center;
+    }
+    .nav {
+        display: none;
+    }
+    .last_bar {
+        display: none;
+    }
+    .landing_page_log_mobileOnly {
+        display: block;
+    }
+
+    #first_line,#second_line {
+        margin: 10px;
+        padding-left: 75px;
+    }
+    #second_line::after {
+        display: none;
+    }
+
+    .head {
+        flex: 2
+    }
+
+    .img {
+        position: relative;
+        transform: translate(300px, 0px) !important;
+    }
+    .btn {
+        margin-left: 0;
+        transform: translate(215px, 20px) !important;
+
+    }
+
+    button.btn::before {
+        display: none;
+    }
+    
+    .WeDreamLogo {
+        display: none;
+    }
+
+
+
+
+    .content-section {
+        margin-left: 0;
+        width: max-content;
+        align-items: center !important;
+    }
+
+    .top-row1 {
+        display: none;
+    }
+
+    .bottom-row1 { 
+        width: 750px;
+    }
+    .blog-outer-container {
+        flex-direction: column;
+
+    }
+    .blog-post-outline {
+        align-self: center;
+    }
+    .article_header_contanier { 
+        display: block;
+        width: auto;
+    }
+
+    #bottom-row-header::after { 
+        content: " "; 
+        width: 3px;
+        height: 50px;
+        transform: translate(5px, -8px);
+        position: absolute;
+        background-color: #1E96FC;
+    }
+   
+}
+
+/* MOBILE RESPONSIVENESS */
