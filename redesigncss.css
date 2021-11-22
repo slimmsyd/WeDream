@@ -442,6 +442,7 @@ h2#innovation {
 .footerDetails { 
     flex: 2;
     height: max-content;
+    padding-top: 5rem;
     display:  flex;
     justify-items: flex-end;
     align-items: flex-end;
