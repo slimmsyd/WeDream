@@ -215,7 +215,7 @@ i {
 }
 @media screen and (max-width: 1024px) { 
     .img {
-        transform: translate(7em, -5.5em) !important;
+        transform: translate(7em, -3.5em) !important;
     }
 }
 /* .btn:hover {
@@ -380,7 +380,30 @@ span#changing-text-1::before {
 
 @media screen and (max-width: 425px) {
     .content-section {
-        padding-left: 5rem;
+        padding-left: 1rem;
+    }
+
+    .line-box {
+        margin-left: 5rem !important;
+    }
+    .nav_Links {
+        font-size: 14px !important;
+    }
+    .nav_Links::after { 
+        display: none !important;
+    }
+    .nav_Social {
+        transform: translateX(0.1rem);
+    }
+    .nav_Mail {
+        transform: translateX(10px);
+    }
+
+    h1 { 
+        margin: 0 !important;
+    }
+    p {
+        font-size: 16px !important;
     }
     
 }
